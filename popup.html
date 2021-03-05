@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 140px;
+        width: 280px;
+        outline: none;
+        background-color: #F2F4F1;
+        padding: 4px;
+      }
+      input {
+        outline: none;
+        height: 12px;
+        width: 180px;
+        padding: 10px;
+        font-size: 16px;
+        color: grey;
+        font-weight: 500;
+      }
+      .saved-text {
+        font-size: 24px;
+        color: #468847;
+      }
+      .header-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .checkmark-icon {
+        width: 20px;
+        height: 20px;
+        margin-top: 28px;
+        margin-right: 10px;
+      }
+      .tag-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: #468847;
+      }
+      .cta {
+        margin-top: 12px;
+        margin-bottom: 10px;
+        border-color: #468847;
+        border-style: solid;
+        border-radius: 10px;
+        width: 80px;
+        padding: 6px;
+        color: grey;
+        font-weight: 600;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <img class="checkmark-icon" src="./images/checkmark.ico"/>
+      <p class="saved-text">Highlight Saved!</p>
+    </div>
+    <p class="tag-text">Want to tag it? (Type + Hit Enter)</p>
+    <input placeholder="tag" name="tagInput" autofocus></input>
+    <br>
+    <button name="cta" class="cta" onclick="updateHighlight()">Add Tag</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
